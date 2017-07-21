@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<link rel="shortcut icon" href="pch32x32.ico" type="image/x-icon">
+  <title>Pc Health Library - Buscar</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="userstart.html"><img src="images/pchly_300x150.png"></a></h1>
+          <h2><script type="text/javascript" src="js/frase.js"></script></h2>
+        </div>
+      </div><br>
+      
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="search.html">Buscar</a></li>
+            <li><a href="modperfil.html">Modificar Perfil</a></li>
+            <li><a href="#">Insertar</a>
+              <ul>
+                <li><a href="inbook.html">Libros</a></li>
+                <li><a href="inmagazine.html">Revistas</a>
+                <li><a href="innews.html">Periodicos</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.php">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3><img src="images/default_user.jpg"><br>
+ID: 1339422</h3>
+          <h4>Mauricio Flores Nicolás</h4>
+          <h5>Ultima sesion:<br>
+Septiembre 13, 2013</h5>
+          <h5>Usuario</h5>
+		  <h5>Prestacion actual:<br>
+1 Libro, 2 Revistas</h5>
+		  <h5>Dirección:<br>
+Lejos de aqui cercas de alla</h5>
+		  <h5>E-mail:<br>
+ing_flores@pchealth.net16.net</h5>
+		  <h5>Edad:<br>
+22años</h5>
+          <a href="index.php">Cerrar Sesi&oacute;n</a>
+        </div>
+      </div>
+      <div class="content">
+        <img style="float: left; vertical-align: middle; margin: 0 10px 0 0;" src="images/examples.png" alt="home" />
+        <h1 style="margin: 15px 0 0 0;">Buscar</h1><br><br>
+        <form name="search" action="" method="POST" >
+          <div class="form_settings">
+          	<p><span>Tipo de archivo:</span><select name="t_book" id="t_book">
+              <option selected>Seleccione uno</option>
+              <option>Impreso</option>
+              <option>Digital</option>
+            </select></p>
+            <p><span>Nombre:</span><input type="text" name="username" id="username" /></p>
+            <p><span>Autor:</span><input type="text" name="email" id="email" /></p>
+            <p><span>Categoria:</span><input type="text" name="iduser" id="iduser" /></p>
+            <p><span>Libro</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
+            <p><span>Revista</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
+            <p><span>Periodico</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
+            <p>Demuestra que eres humano:</p>
+            <p><span style=" text-align:right;"><img style="color:#FFF;" src="captcha.php"/>&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="captcha" id="captcha" maxlength="6" size="6"/></p><br>
+            <p style="padding-top: 15px"><input class="submit" type="submit" name="name" value="Buscar" /></p>
+          </div>
+        </form><br>
+<br>
+Libros
+<table style="width:100%;">
+          <tr>
+            <th>Tipo de archivo</th>
+            <th>Nombre</th>
+            <th>Categoria</th>
+            <th>Cantidad</th>
+            <th>Ubicacion</th>
+            </tr>
+          <tr>
+          <td>Impreso</td>
+          <td>Carta al padre</td>
+          <td>Lectura</td>
+          <td>2</td>
+          <td>Pasillo A, Fila C</td>
+          </tr>
+          <tr>
+          <td>Digital</td>
+          <td>Carta al padre</td>
+          <td>Lectura</td>
+          <td>-</td>
+          <td><a href="files/Carta al padre - Franz Kafka.pdf" target="_blank">Carta al....pdf</a></td>
+          </tr>
+          <tr>
+          <td>Impreso</td>
+          <td>El extranjero</td>
+          <td>Lectura</td>
+          <td>6</td>
+          <td>Pasillo B, Fila B</td>
+          </tr>
+          <tr>
+          <td>Digital</td>
+          <td>El extranjero</td>
+          <td>Lectura</td>
+          <td>-</td>
+          <td><a href="files/El extranjero - Albert Camus.pdf" target="_blank">El extranjero...pdf</a></td>
+          </tr>
+        </table><br>
+<br>
+Revistas
+<table style="width:100%;">
+          <tr>
+            <th>Tipo de archivo</th>
+            <th>Nombre</th>
+            <th>Categoria</th>
+            <th>Cantidad</th>
+            <th>Ubicacion</th>
+            </tr>
+          <tr>
+          <td>Impreso</td>
+          <td>¿Qué son los alicamentos? </td>
+          <td>Lectura</td>
+          <td>2</td>
+          <td>Pasillo A, Fila D</td>
+          </tr>
+          <tr>
+          <td>Impreso</td>
+          <td>El Café</td>
+          <td>Lectura</td>
+          <td>3</td>
+          <td>Pasillo A, Fila D</td>
+          </tr>
+          <tr>
+        </table><br>
+<br>
+Periodicos
+<table style="width:100%;">
+          <tr>
+            <th>Tipo de archivo</th>
+            <th>Nombre</th>
+            <th>Categoria</th>
+            <th>Cantidad</th>
+            <th>Ubicacion</th>
+            </tr>
+          <tr>
+          <td>Impreso</td>
+          <td>Desmpleo mundial</td>
+          <td>Lectura</td>
+          <td>4</td>
+          <td>Pasillo C, Fila A</td>
+          </tr>
+          <tr>
+          <td>Impreso</td>
+          <td>Globalizacion</td>
+          <td>Lectura</td>
+          <td>3</td>
+          <td>Pasillo C, Fila A</td>
+          </tr>
+          <tr>
+          <td>Digital</td>
+          <td>Biocombustibles</td>
+          <td>Lectura</td>
+          <td>-</td>
+          <td><a href="#" target="_blank">Biocombustibles.pdf</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2013 | <a href="http://pchealth.net16.net">Powered by Pc Health</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

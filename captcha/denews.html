@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<link rel="shortcut icon" href="pch32x32.ico" type="image/x-icon">
+  <title>Pc Health Library - Administrador</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="js/denews.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="adminstart.html"><img src="images/pchly_300x150.png"></a></h1>
+          <h2><script type="text/javascript" src="js/frase.js"></script></h2>
+        </div>
+      </div><br>
+      
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="register.html">Registrar usuario</a></li>
+            <li><a href="#">Insertar</a>
+              <ul>
+                <li><a href="inbook.html">Libros</a></li>
+                <li><a href="inmagazine.html">Revistas</a>
+                <li><a href="innews.html">Periodicos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Borrar</a>
+              <ul>
+                <li><a href="debook.html">Libros</a></li>
+                <li><a href="demagazine.html">Revistas</a>
+                <li><a href="denews.html">Periodicos</a></li>
+              </ul>
+            </li>
+            <li><a href="prestamo.html">Prestamo</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3><img src="images/admin_user.jpg">Administrador</h3>
+          <h4>Administrador del sitio</h4>
+          <h5>Septiembre 17, 2013</h5>
+          <a href="index.php">Cerrar Sesi&oacute;n</a>
+        </div>
+      </div>
+      <div class="content">
+        <img style="float: left; vertical-align: middle; margin: 0 10px 0 0;" src="images/browser.png" alt="home" />
+        <h1 style="margin: 15px 0 0 0;">Baja de Periodico</h1><br><br>
+        <form name="denews" action="" method="POST" onsubmit="return valida();" >
+        <fieldset>
+        <legend>Todos los campos son obligatorios</legend>
+          <div class="form_settings">
+            <p><span>Id del Periodico:</span><input type="text" name="idbook" id="idbook" /></p>
+            <p><span>Concepto:</span>
+              <textarea name="concept" id="concept"></textarea>
+            </p>
+            <p>Demuestra que eres humano:</p>
+            <p><span style=" text-align:right;"><img style="color:#FFF;" src="captcha.php"/>&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="captcha" id="captcha" maxlength="6" size="6"/></p><br>
+            <p style="color:#F00;"><?php echo $mensaje; ?></p>
+            <p style="padding-top: 15px"><input class="submit" type="submit" name="name" value="Registrar" /></p>
+          </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2013 | <a href="http://pchealth.net16.net">Powered by Pc Health</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
